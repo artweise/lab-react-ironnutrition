@@ -17,7 +17,8 @@ const FoodBox = ({ food }) => {
         </p>
         <Button
           type="primary"
-          style={{ background: 'red', borderColor: 'yellow' }}
+          className="btn-delete"
+          style={{ background: 'red' }}
         >
           {' '}
           Delete{' '}
