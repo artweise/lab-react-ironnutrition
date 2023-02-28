@@ -1,0 +1,10 @@
+.food-list-ctn {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin: 30px;
+}

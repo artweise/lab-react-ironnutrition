@@ -1,22 +1,25 @@
-import foods from './foods.json';
+import FoodList from './components/FoodList/FoodList';
 import { useState } from 'react';
 import './App.css';
 import { Card, Row, Col, Divider, Input, Button } from 'antd';
 
 const App = () => {
-  const [allDishes, setAllDishes] = useState(foods);
+  // const [allFoods, setAllFoods] = useState(foods);
 
   // return <div className="App"></div>;
   return (
     <div>
-      {allDishes.map((dish, index) => {
-        return (
-          <div key={index}>
-            <p>{dish.name}</p>
-            <img src={dish.image} className="dish-image" />
-          </div>
-        );
-      })}
+      <FoodList />
+      {/* <h2 className="title">Food List</h2>
+      <div className="food-list-ctn">
+        {allFoods.map((recipe, index) => {
+          return (
+            <div key={index}>
+              <FoodBox food={recipe} />
+            </div>
+          );
+        })}
+      </div> */}
     </div>
   );
 };
